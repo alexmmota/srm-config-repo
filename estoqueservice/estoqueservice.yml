@@ -1,19 +1,19 @@
 spring:
- datasource:
-   driverClassName: 'com.mysql.jdbc.Driver'
-   url: 'jdbc:mysql://database:3306/db_srm?characterEncoding=utf8'
-   username: 'srm'
-   password: '1234'
-   testWhileIdle: 'true'
-   validationQuery: 'SELECT 1'
- jpa:
-   hibernate:
-     ddl-auto: 'none'
-   properties:
-     hibernate:
-       dialect: 'org.hibernate.dialect.MySQL5InnoDBDialect'
-       show_sql: 'true'
-       format_sql: 'true'
+  datasource:
+    driverClassName: 'com.mysql.jdbc.Driver'
+    url: 'jdbc:mysql://database:3306/db_srm?characterEncoding=utf8'
+    username: 'srm'
+    password: '1234'
+    testWhileIdle: 'true'
+    validationQuery: 'SELECT 1'
+  jpa:
+    hibernate:
+      ddl-auto: 'none'
+    properties:
+      hibernate:
+        dialect: 'org.hibernate.dialect.MySQL5InnoDBDialect'
+        show_sql: 'true'
+        format_sql: 'true'
 
 flyway:
   baseline-version: 1
