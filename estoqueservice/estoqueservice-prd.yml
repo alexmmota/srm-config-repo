@@ -26,3 +26,7 @@ flyway:
   url: 'jdbc:mysql://database:3306/db_srm?characterEncoding=utf8'
   consumer: 'srm'
   password: '1234'
+
+srm:
+  message:
+    fail: 'Quantidade não está disponível no estoque'
