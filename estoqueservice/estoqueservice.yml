@@ -29,4 +29,4 @@ flyway:
 
 srm:
   message:
-    fail: 'Quantidade não está disponível no estoque'
+    fail: 'Quantidade está indisponível no estoque'
