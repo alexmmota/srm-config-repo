@@ -1,4 +1,15 @@
 zuul:
- routes:
-   estoqueservice: /estoque/**
-   pedidoservice: /pedido/**
+  sensitiveHeaders:
+  prefix: /api
+  ignored-services: '*'
+  routes:
+    estoqueservice: /estoque/**
+    pedidoservice: /pedido/**
+
+hystrix:
+  command:
+    estoqueservice:
+      execution.isolation.thread.timeoutInMilliseconds: 5000
+    pedidoservice:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+
