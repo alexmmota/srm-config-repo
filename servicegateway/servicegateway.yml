@@ -1,13 +1,10 @@
 zuul:
+  sensitiveHeaders:
   prefix: /api
   ignored-services: '*'
   routes:
-    estoqueservice: 
-      path: /estoque/**
-      sensitiveHeaders:
-    pedidoservice: 
-      path: /pedido/**
-      sensitiveHeaders:
+    estoqueservice: /estoque/**
+    pedidoservice: /pedido/**
 
 hystrix:
   command:
