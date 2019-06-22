@@ -1,10 +1,10 @@
 zuul:
-  sensitiveHeaders:
   prefix: /api
   ignored-services: '*'
   routes:
     estoqueservice: /estoque/**
     pedidoservice: /pedido/**
+  sensitiveHeaders: Cookie,Set-Cookie
 
 hystrix:
   command:
