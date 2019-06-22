@@ -30,3 +30,6 @@ flyway:
 srm:
   message:
     fail: 'Quantidade não está disponível no estoque! ehhhhhh'
+
+signing:
+  key: '44354_gj35vh*ags'
