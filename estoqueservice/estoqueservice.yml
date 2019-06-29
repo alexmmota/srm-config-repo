@@ -1,4 +1,13 @@
 spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: kafkaserver
+      bindings:
+        idresses:
+          destination: productChangeTopic
+          contentType: application/json
   datasource:
     driverClassName: 'com.mysql.jdbc.Driver'
     url: 'jdbc:mysql://database:3306/db_srm_estoque?characterEncoding=utf8'
