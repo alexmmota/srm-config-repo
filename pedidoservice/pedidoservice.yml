@@ -1,7 +1,21 @@
 spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: kafkaserver
+      bindings:
+        idresses:
+          destination: productChangeTopic
+          contentType: application/json
+          group: pedidoGroup
   data:
     mongodb:
       uri: 'mongodb://srm:1234@mongodb:27017/db_srm'
 
 signing:
   key: '44354_gj35vh*ags'
+
+redis:
+  server: 'redis'
+  port: 6379
