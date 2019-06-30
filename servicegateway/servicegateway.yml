@@ -1,3 +1,10 @@
+spring:
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://tracing-service:8080
+
 zuul:
   prefix: /api
   ignored-services: '*'
@@ -12,4 +19,3 @@ hystrix:
       execution.isolation.thread.timeoutInMilliseconds: 5000
     pedidoservice:
       execution.isolation.thread.timeoutInMilliseconds: 3000
-

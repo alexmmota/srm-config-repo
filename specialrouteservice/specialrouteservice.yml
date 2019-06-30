@@ -14,6 +14,11 @@ spring:
        dialect: 'org.hibernate.dialect.MySQL5InnoDBDialect'
        show_sql: 'true'
        format_sql: 'true'
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://tracing-service:8080
 
 flyway:
   baseline-version: 1

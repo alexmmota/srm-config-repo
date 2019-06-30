@@ -12,6 +12,11 @@ spring:
   data:
     mongodb:
       uri: 'mongodb://srm:1234@mongodb:27017/db_srm'
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://tracing-service:8080
 
 signing:
   key: '44354_gj35vh*ags'
