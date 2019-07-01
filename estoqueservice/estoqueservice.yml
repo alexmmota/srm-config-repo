@@ -36,11 +36,11 @@ signing:
 
 security:
   basic:
-    enabled: false
+    enabled: 'false'
 
 management:
   security:
-    enabled: false
+    enabled: 'false'
 
 keycloak:
   auth-server-url: http://172.32.0.113:8080/auth
@@ -53,4 +53,4 @@ keycloak:
   security-constraints[0]:
     authRoles[0]: user
     securityCollections[0]:
-      patterns[0]: "/v1/products/*"
+      patterns[0]: "/v1/departments/*"
