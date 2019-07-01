@@ -34,6 +34,14 @@ srm:
 signing:
   key: '44354_gj35vh*ags'
 
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
 keycloak:
   auth-server-url: http://172.32.0.113:8080/auth
   realm: srm
